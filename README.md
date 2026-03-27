@@ -1,32 +1,57 @@
+# DATE : 12/02/2026
 # EXPT.NO 4 SIMULATION OF BUS TOPOLOGY NETWORK
-# AIM
+## NAME: Rabin R 
+## REG NO:212223060215
+
+# AIM:
 
 To create and monitor Bus Topology and effective data transmission using NS2 Software.
 
-# APPARATUS REQUIRED
+# APPARATUS REQUIRED:
 
-PC System with Linux OS, NS2 software.
+1.PC System with Linux OS
 
-# ALGORITHM
+2.NS2 software.
+
+# ALGORITHM:
 
 STEP 1: Start the program.
+
 STEP 2: Declare the global variables ns for creating a new simulator.
+
 STEP 3: Open the network animator file in the write mode.
+
 STEP 4: Open the trace file in the write mode.
+
 STEP 5: Transfer the packets in network.
+
 STEP 6: Create the capable no of nodes.
+
 STEP 7: Create the duplex-link between the nodes including the delay time, bandwidth and dropping queue mechanism.
+
 STEP 8: Set a tcp connection for source node.
+
 STEP 9: Set the destination node using tcp sink.
+
 STEP 10: Set the window size and the packet size for the tcp.
+
 STEP 11: Set up the ftp over the tcp connection.
+
 STEP 12: Create the traffic generator CBR for the source and destination files.
+
 STEP 13: Define the plot window and finish procedure.
-STEP 14: In the definition of the finish procedure declare the global variables. STEP 15: Close the trace file and namefile and execute the network animation file. STEP 16: At the particular time call the finish procedure.
+
+STEP 14: In the definition of the finish procedure declare the global variables. 
+
+STEP 15: Close the trace file and namefile and execute the network animation file. 
+
+STEP 16: At the particular time call the finish procedure.
+
 STEP 17: Stop the program.
 
 # PROGRAM:
 
+~~~
 
 #Create a simulator object set ns [new Simulator] #Open the nam trace file set nf [open out.nam w]
 $ns namtrace-all $nf #Define a 'finish' procedure proc finish {}
@@ -56,11 +81,12 @@ $ns at 4.5 "$cbr0 stop"
 #Call the finish procedure after 5 seconds of simulation time
 $ns at 5.0 "finish"
 $ns run
- 
-# OUTPUT
+~~~
+# OUTPUT:
 
+![WhatsApp Image 2026-03-27 at 8 25 45 PM](https://github.com/user-attachments/assets/e1e5f24a-e093-4676-9e09-2d163b2b0776)
 
-# RESULT
+# RESULT:
 
 Thus the Bus Topology using NS2 software is created and monitored successfully.
 
